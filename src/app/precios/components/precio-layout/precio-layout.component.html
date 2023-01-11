@@ -1,0 +1,50 @@
+<div class="container mt-5">
+    <div class="card">
+        <div class="card-header">
+          {{ title }}
+          <button *ngIf="addBtn" type="button" class="btn btn-outline-dark float-right" (click)="addAction()">
+            <i class="fi fi-bs-plus"></i>            
+          </button>
+          <button *ngIf="trashBtn" type="button" class="mr-1 btn btn-outline-dark float-right" (click)="recoveryAction()">
+            <i class="fi fi-rr-trash"></i>
+          </button>
+          <button *ngIf="backBtn" type="button" class="mr-1 btn btn-outline-dark float-right" (click)="backAction()">
+            <i class="fi fi-br-arrow-left"></i>
+          </button>
+        </div>
+        <div class="card-body">
+            <div *ngIf="filter" class="form-row mt-2">
+                <div class="form-group col-md-3">
+                  <label for="inputState">Filter 01</label>
+                  <select id="inputState" class="form-control">
+                    <option selected>Choose...</option>
+                    <option>...</option>
+                  </select>
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="inputState">Filter 02</label>
+                    <select id="inputState" class="form-control">
+                      <option selected>Choose...</option>
+                      <option>...</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-md-3">
+                    <label for="inputState">Filter 03</label>
+                    <select id="inputState" class="form-control">
+                      <option selected>Choose...</option>
+                      <option>...</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-md-3">
+                    <label for="inputState">Filter 04</label>
+                    <select id="inputState" class="form-control">
+                      <option selected>Choose...</option>
+                      <option>...</option>
+                    </select>
+                  </div>
+            </div>
+          <app-data-precios></app-data-precios>
+        </div>
+      </div>
+      
+</div>
